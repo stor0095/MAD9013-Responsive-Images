@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+    background-color: #38777F;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -- Baseline Elements --*/
+body{ 
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  line-height: 1.5;
+}
+h1{
+  text-align: center;
+  font-size: 1.8rem;
+    color: aqua;
+}
+p{
+  font-family: sans-serif;
+  line-height: 1.75;
+    text-align: center;
+    color: aqua;
+}
+
+
+.wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+/* ----------- Grid --------- */
+/* -------------------------- */
+.col-container{
+  margin: 1rem 0;
+}
+
+img {
+width: 100%;}
+
+@media all and (min-width: 600px) and (max-width: 1024px){
+    
+    .wrapper {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        
+    }
+    
+}
+
+@media all and (min-width: 1024px){
+    .wrapper {
+        -webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+    }
+
+}
